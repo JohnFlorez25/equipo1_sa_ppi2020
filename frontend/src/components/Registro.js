@@ -48,21 +48,24 @@ const {history} = props;
               Estoy de acuerdo.
               <div className="valid-feedback">Valid.</div>
               <div className="invalid-feedback">
-              Marque esta casilla de verificación para continuar.
+              Marque esta casilla de verificación para continuar.   
               </div>
             </label>
           </div>
           <div>
-          <button type="button" class="btn btn-info  btn-sm col-xs-2 margin-right">Profesor</button>
-          
-          <button type="button" class="btn btn-info  btn-sm col-xs-2 margin-left">Estudiante</button>
-          </div>
-          
-
-          <button type="submit"  className="btn btn-success my-4">
-            Iniciar
+          <button type="submit" className="btn btn-info"
+          onClick = {()=> history.push("/Grupos")}>
+          Profesor
           </button>
-          <button type="submit"  className="btn btn-danger" 
+          
+          <button type="submit" className="btn btn-info"
+           onClick = {()=> history.push("/Grupos")}>
+          Estudiante
+          </button>
+          </div>
+          <br>
+          </br>
+          <button type="submit" className="btn btn-danger" 
           onClick = {()=> history.goBack("/")}>
             Atrás
           </button>
