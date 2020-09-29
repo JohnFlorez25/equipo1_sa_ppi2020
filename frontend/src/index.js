@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Ppicontainer from "./container/Ppicontainer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Ppicontainer />
   </React.StrictMode>,
   document.getElementById('root')
 );
