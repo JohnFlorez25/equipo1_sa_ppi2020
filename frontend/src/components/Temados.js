@@ -1,10 +1,10 @@
 import React from "react";
-
+import "../styles/Temados.css";
 
 const Temados = (props) => {
 const {history} = props;
   return(
-    <div>
+    <div className="tem">
       <p className="text-break">
       <h4 align="left">Tetra pak (brinks)</h4>
       <img className="Primera" src="./img/plasticotres.jpg" align="left"/>

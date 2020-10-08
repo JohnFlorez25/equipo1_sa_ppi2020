@@ -1,0 +1,17 @@
+.pagi{
+  max-width: 60rem;
+  max-height: 200rem;
+}
+  
+.pagi{
+  display:block;
+  margin:auto;
+  }
+
+.pagi{
+  background-image: url("/img/fondoo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

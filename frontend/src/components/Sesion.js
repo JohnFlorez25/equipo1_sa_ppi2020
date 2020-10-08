@@ -1,15 +1,15 @@
 import React from "react";
+import "../styles/Sesion.css";
 
-const Sesion = () => {
+const Sesion = (props) => {
+  const {history} = props;
   return(
-<div>
-<div className="container">
-        <h2 align="center">Inicia sesión</h2>
-        <p align="center">
-          ¡Bienvenido!
-        </p>
+<div className="nuevo">
+<div className="container"><br></br><br></br><br></br>
+        <h1 align="center">Inicia sesión</h1><br></br>
+        <h4 align="center">¡Bienvenidos!</h4>
         <form action="/action_page.php" className="was-validated">
-          <div className="form-group">
+          <div className="form-group"><br></br>
             <label for="uname">Correo:</label>
             <input
               type="text"
@@ -49,10 +49,15 @@ const Sesion = () => {
               Marque esta casilla de verificación para continuar.
               </div>
             </label>
-          </div>
+          </div><br></br><br></br>
+
+          <button type="submit" className="btn btn-danger" 
+          onClick = {()=> history.goBack("/")}>
+            Atrás
+          </button>
           
-         
-          <button type="submit"  className="btn btn-success">
+          <button type="submit"  className="btn btn-success"
+          onClick = {()=> history.push("/Menu")}>
             Vamos
           </button>
 
@@ -60,11 +65,10 @@ const Sesion = () => {
       </div>
 
 
-</div>
+      </div>
 
     
   )
-
+ 
 }
-
 export default Sesion;

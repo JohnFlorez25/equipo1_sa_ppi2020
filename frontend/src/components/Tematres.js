@@ -1,10 +1,10 @@
 import React from "react";
-
+import "../styles/Tematres.css";
 
 const Tematres = (props) => {
   const {history} = props;
   return(
-    <div>
+    <div className="tem">
       <p className="text-break">
       <h4 align="left">Vidrio</h4>
       <img className="Primera" src="./img/plasticocinco.jpg" align="left"/>

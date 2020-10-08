@@ -4,18 +4,18 @@ import "../styles/Iniciouno.css";
 
 const Iniciouno = () => {
   return (
-    <div>
+    <div className="uno">
       <main role="main">
-        <section className="jumbotron text-center">
-          <div className="container">
-            <img className="logo" src="./img/logo.jpg" alt="logo" />
-            <p className="lead text-muted">Bienvenidos</p>
-            <p>
-              <Link to="/Registro" className="btn btn-primary my-2">
+        <section className="text-center">
+          <div className="container"><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+            
+            <h4 align="center">¡Bienvenidos!</h4>
+            <p><br></br>
+              <Link to="/Registro" className="btn btn-primary my-5">
                 Registrate
               </Link>
 
-              <Link to="/Sesion" className="btn btn-secondary my-2">
+              <Link to="/Sesion" className="btn btn-secondary my-5">
                 Iniciar sesion
               </Link>
             </p>

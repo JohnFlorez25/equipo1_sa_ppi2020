@@ -1,5 +1,15 @@
 .logo {
   Background-attachment: center;
-  Width: 110%;
+  Width: 100%;
   Height: 50%;
+}
+
+.uno{
+  background-image: url("/img/inicio3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  
 }

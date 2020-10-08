@@ -1,17 +1,16 @@
 import React from "react";
+import "../styles/Registro.css";
 
 
 const Registro = (props) => {
 const {history} = props;
   return (
     <div className="Ini">
-      <div className="container">
-        <h2 align="center">Registro</h2>
-        <p align="center">
-          ¡Inicia tu experiencia!
-        </p>
+      <div className="container"><br></br><br></br>
+        <h1 align="center">Registro</h1><br></br>
+        <h4 align="center">¡Inicia tu experiencia!</h4>
         <form action="/action_page.php" className="was-validated">
-          <div className="form-group">
+          <div className="form-group"><br></br>
             <label for="uname">Correo:</label>
             <input
               type="text"
@@ -52,7 +51,7 @@ const {history} = props;
               </div>
             </label>
           </div>
-          <div>
+          <div><br></br>
           <button type="submit" className="btn btn-info"
           onClick = {()=> history.push("/Grupos")}>
           Profesor

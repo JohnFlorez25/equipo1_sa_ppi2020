@@ -1,0 +1,16 @@
+.carta{
+  max-width: 200rem;
+  max-height: 500rem;
+}
+  
+.carta{
+  display:block;
+  margin:auto;
+  }
+
+.carta{
+  background-image: url("/img/fondoo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

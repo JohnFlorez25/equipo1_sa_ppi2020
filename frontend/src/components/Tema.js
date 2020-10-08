@@ -1,9 +1,10 @@
 import React from "react";
+import "../styles/Tema.css";
 
 const Tema = (props) => {
   const { history } = props;
   return (
-    <div>
+    <div className="tem">
       <p className="text-break">
         <h4 align="left">Envases de plástico</h4>
         <img className="Primera" src="./img/plastico.jpg" align="left" />

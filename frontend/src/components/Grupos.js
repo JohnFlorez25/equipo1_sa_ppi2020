@@ -1,10 +1,11 @@
 import React from "react";
 
-const Grupos = () => {
+const Grupos = (props) => {
+  const {history} = props;
   return(
-    <div>
+    <div><br></br>
       <h1 align="center">Seleccione el grado a participar</h1>
-      <div className="dropdown">
+      <div className="dropdown"><br></br>
   <button className="btn btn-secondary dropdown-toggle my-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Grados de 6°- 8°
   </button>
@@ -31,10 +32,12 @@ const Grupos = () => {
     <a className="dropdown-item" href="/">11-1</a>
     <a className="dropdown-item" href="/">11-2</a>
   </div>
-</div>
-<button type="submit"  className="btn btn-success my-4">
+</div><br></br>
+<button type="submit" className="btn btn-danger" 
+          onClick = {()=> history.push("/Menu")}>
             Realizado
           </button>
+
 
       </div>
     
