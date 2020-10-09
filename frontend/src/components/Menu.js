@@ -52,7 +52,10 @@ const Menu = (props) => {
   <div className="card-body">
     
     <img className="reci" src="./img/div4.jpeg" alt="reci" />
-    <button type="button" class="btn btn-link text-success">Errores más comunes</button>
+    <button type="button" class="btn btn-link text-success"
+    onClick = {()=> history.push("/Temasiete")}>
+      Errores más comunes
+      </button>
   </div>
 </div>
 <div className="card" >
