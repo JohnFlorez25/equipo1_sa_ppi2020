@@ -42,7 +42,10 @@ const Menu = (props) => {
   <div className="card-body">
     
     <img className="reci" src="./img/div3.jpeg" alt="reci" />
-    <button type="button" class="btn btn-link text-success">Beneficios del reciclaje</button>
+    <button type="button" class="btn btn-link text-success"
+    onClick = {()=> history.push("/Temaseis")}>
+      Beneficios del reciclaje
+      </button>
   </div>
 </div>
 <div className="card" >
