@@ -4,8 +4,8 @@ import "../styles/Temanueve.css";
 const Temanueve = (props) => {
   const { history } = props;
   return (
-    <div>
-      <p className="text-break">
+    <div className="verde">
+      <p className="text">
         <br></br>
         <p class="text-success">
           <h5> Errores en el contenedor verde </h5>
@@ -39,6 +39,7 @@ const Temanueve = (props) => {
         </p>
         <div>
           <br></br>
+          <br></br>
           <button
             type="button"
             className="btn btn-danger"
@@ -46,14 +47,9 @@ const Temanueve = (props) => {
           >
             Volver
           </button>
-          <button
-            type="button"
-            className="btn btn-info"
-            onClick={() => history.push("/Temadiez")}
-          >
-            Siguiente
-          </button>
         </div>
+        <br></br>
+        <br></br>
       </p>
     </div>
   );

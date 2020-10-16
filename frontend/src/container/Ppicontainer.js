@@ -16,8 +16,8 @@ import Temaseis from "../components/Temaseis";
 import Temasiete from "../components/Temasiete";
 import Temaocho from "../components/Temaocho";
 import Temanueve from "../components/Temanueve";
-
-
+import Temadiez from "../components/Temadiez";
+import Temaonce from "../components/Temaonce";
 export default function Ppicontainer() {
   return (
   <BrowserRouter>
@@ -35,6 +35,8 @@ export default function Ppicontainer() {
   <Route path= "/Temasiete" exact component = {Temasiete}/>
   <Route path= "/Temaocho" exact component = {Temaocho}/>
   <Route path= "/Temanueve" exact component = {Temanueve}/>
+  <Route path= "/Temadiez" exact component = {Temadiez}/>
+  <Route path= "/Temaonce" exact component = {Temaonce}/>
 
 
   </BrowserRouter>

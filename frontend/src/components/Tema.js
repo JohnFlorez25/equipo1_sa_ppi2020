@@ -31,6 +31,7 @@ const Tema = (props) => {
           naturales, algunos de estos son:
         </p>
         <ul>
+          <br></br>
           <li>Revistas</li>
           <li>Periodicos viejos</li>
           <li>Cajas de cereales</li>

@@ -34,22 +34,9 @@ const Sesion = (props) => {
             />
             <div className="valid-feedback">Valid.</div>
             <div className="invalid-feedback">Por favor rellene este campo.</div>
-          </div>
-          <div className="form-group form-check">
-            <label className="form-check-label">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                name="remember"
-                required
-              />{" "}
-              Estoy de acuerdo.
-              <div className="valid-feedback">Valid.</div>
-              <div className="invalid-feedback">
-              Marque esta casilla de verificación para continuar.
-              </div>
-            </label>
-          </div><br></br><br></br>
+        
+         
+          </div><br></br><br></br><br></br><br></br>
 
           <button type="submit" className="btn btn-danger" 
           onClick = {()=> history.goBack("/")}>
@@ -62,7 +49,7 @@ const Sesion = (props) => {
           </button>
 
         </form>
-      </div>
+      </div><br></br><br></br><br></br>
 
 
       </div>
