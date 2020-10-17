@@ -7,9 +7,11 @@ const Temaocho = (props) => {
     <div>
       <p className="text-break">
         <br></br>
-        <p class="text-primary">
+
+        <p class="text-primary"><br></br>
           <h5> Errores en el contenedor azul </h5>
         </p>
+        <br></br>
         <br></br>
         <img className="casca" src="./img/contenedor2.jpg" align="left" />
         <br></br>
@@ -34,6 +36,9 @@ const Temaocho = (props) => {
           </li>
         </h7>{" "}
         <div>
+          <br></br>
+          <br></br>
+          <br></br>
           <br></br>
           <br></br>
           <button

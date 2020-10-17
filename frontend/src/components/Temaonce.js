@@ -9,7 +9,7 @@ const Temaonce = (props) => {
         <h4 align="left">Inorgánica</h4>
         <img className="ano" src="./img/inorganica.png" align="left" />
        Los residuos inorgánicos son aquellos de orígen no biológico, de orígen industrial o de algún proceso no natural, que expuestos a las condiciones ambientales naturales, tarda mucho tiempo en degradarse, es decir, no vuelven a integrarse a la tierra, sino tras un largo periodo de tiempo. La finalidad de dichos desperdicios es la elaboración de productos como envases, piezas automotrices, productos decorativos, etc...  
-      </p>
+      </p><br></br><br></br><br></br><br></br><br></br>
       
       
         
@@ -20,7 +20,7 @@ const Temaonce = (props) => {
           naturales, algunos de estos son:
         
         
-      <br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
       <div className="Centrado">
         <button

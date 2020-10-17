@@ -7,9 +7,9 @@ const Temanueve = (props) => {
     <div className="verde">
       <p className="text">
         <br></br>
-        <p class="text-success">
+        <p class="text-success"><br></br>
           <h5> Errores en el contenedor verde </h5>
-        </p>
+        </p><br></br>
         <img className="casca" src="./img/contenedor3.jpg" align="left" />
         Es fundamental entre vidrio y cristal. es frecuente que a la hora de
         deshacernos de elementos de crital los depositemos en el contenedor
@@ -27,7 +27,7 @@ const Temanueve = (props) => {
           </li>
         </h7>{" "}
         <br></br>
-        <p class="text-success">
+        <p class="text-success"><br></br><br></br><br></br>
           <h5>tips para identificar el crital del vidrio </h5>
         </p>
         <p>

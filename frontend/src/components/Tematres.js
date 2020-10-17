@@ -17,7 +17,7 @@ const Tematres = (props) => {
     <li>Tarros de alimentos (mermeladas, conservas, etc...)</li>
     
 </ul>
-<div>
+<div><br></br><br></br>
 
 <p className="text-break">
       <h4 align="left">Pilas y baterías</h4>
@@ -28,7 +28,7 @@ const Tematres = (props) => {
 
 </div>
 
-<div>
+<div><br></br><br></br><br></br><br></br><br></br>
       <p className="text-break">
       <h4 align="left">Otros</h4>
       <img className="Primera" src="./img/plasticocinco.jpg" align="left"/>
@@ -44,7 +44,7 @@ const Tematres = (props) => {
 </ul>
 </div>
 
-<div>
+<div><br></br> 
           <button type="button" className="btn btn-danger"
           onClick={() => history.goBack("/")}
           >

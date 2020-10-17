@@ -20,7 +20,7 @@ const Temadiez = (props) => {
       
         
 
-        <div><br></br><br></br><br></br>
+        <div><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
           <button type="button" className="btn btn-danger"
           onClick={() => history.goBack("/")}
           >

@@ -5,9 +5,9 @@ const Temaseis = (props) => {
   const { history } = props;
   return(
     <div>
-      <p className="text-break">
+      <p className="text-break"><br></br><br></br>
         <h4 align="center">¿Por qué reciclar ayuda al medio ambiente?</h4>
-        <br></br>
+        <br></br><br></br>
         <h9>
           Reciclando evitamos que los productos y materiales se convietan en
           residuos, transformándolos en otros completamente nuevos, alargando su
@@ -31,7 +31,7 @@ const Temaseis = (props) => {
         Reciclar conlleva ahorrar materias primas, Energía, Agua y reducir las
         emisiones de gases de efecto invernadero. Ademas supone una generacion
         de empleo y tejido industrial.
-      </h7><br></br><br></br>
+      </h7><br></br><br></br><br></br><br></br><br></br><br></br>
 
       <div class="alert alert-danger" role="alert">
         En el siguiente video podrás encontrar información más detallada. ¡Anímate a verlo! </div>
@@ -39,7 +39,7 @@ const Temaseis = (props) => {
         <p class="text-primary">https://www.youtube.com/watch?verlo=ynhzzpvtTZE</p>
         
 
-        <div>
+        <div><br></br>
           <button type="button" className="btn btn-danger"
           onClick={() => history.goBack("/")}
           >

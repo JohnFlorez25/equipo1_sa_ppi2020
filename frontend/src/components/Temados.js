@@ -5,7 +5,7 @@ const Temados = (props) => {
   const { history } = props;
   return (
     <div className="tem">
-      <p className="text-break">
+      <p className="text-break"><br></br>
         <h4 align="left">Tetra pak (brinks)</h4>
         <img className="Primera" src="./img/plasticotres.jpg" align="left" />
         ¿Sabías que con 6 briks puede hacerse una caja de zapatos? Reciclar el
@@ -15,6 +15,9 @@ const Temados = (props) => {
 
       <div>
         <p className="text-break">
+          <br></br>
+          <br></br>
+          <br></br>
           <br></br>
           <br></br>
           <br></br>
@@ -32,6 +35,12 @@ const Temados = (props) => {
       </div>
 
       <div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <br></br>
         <button
           type="button"
