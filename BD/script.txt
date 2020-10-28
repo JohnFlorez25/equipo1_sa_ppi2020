@@ -1,0 +1,187 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.3
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 28-10-2020 a las 02:24:44
+-- Versión del servidor: 10.4.14-MariaDB
+-- Versión de PHP: 7.2.34
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `bdo_planambiental`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ejercicio`
+--
+
+CREATE TABLE `ejercicio` (
+  `codigo_ej` int(10) NOT NULL,
+  `nombre_ej` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `relacion_usu_ejer`
+--
+
+CREATE TABLE `relacion_usu_ejer` (
+  `correo` varchar(30) NOT NULL,
+  `codigo_ej` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tema`
+--
+
+CREATE TABLE `tema` (
+  `Codigo_tema` int(10) NOT NULL,
+  `Codigo_de_usuario` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `temas`
+--
+
+CREATE TABLE `temas` (
+  `codigo_tema` int(10) NOT NULL,
+  `tema` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tipo_ejercicio`
+--
+
+CREATE TABLE `tipo_ejercicio` (
+  `codigo_ti` int(10) NOT NULL,
+  `tipo_ej` varchar(20) NOT NULL,
+  `codigo_ej` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tipo_usuario`
+--
+
+CREATE TABLE `tipo_usuario` (
+  `codigo_ti` int(10) NOT NULL,
+  `tipo_u` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `Id` int(2) NOT NULL,
+  `correo` varchar(50) NOT NULL,
+  `contraseña` varchar(10) NOT NULL,
+  `foto` varchar(35) NOT NULL,
+  `codigo_ti` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `ejercicio`
+--
+ALTER TABLE `ejercicio`
+  ADD PRIMARY KEY (`codigo_ej`);
+
+--
+-- Indices de la tabla `relacion_usu_ejer`
+--
+ALTER TABLE `relacion_usu_ejer`
+  ADD KEY `correo` (`correo`),
+  ADD KEY `codigo_ej` (`codigo_ej`);
+
+--
+-- Indices de la tabla `tema`
+--
+ALTER TABLE `tema`
+  ADD PRIMARY KEY (`Codigo_tema`),
+  ADD KEY `Codigo_de_usuario` (`Codigo_de_usuario`);
+
+--
+-- Indices de la tabla `temas`
+--
+ALTER TABLE `temas`
+  ADD PRIMARY KEY (`codigo_tema`);
+
+--
+-- Indices de la tabla `tipo_ejercicio`
+--
+ALTER TABLE `tipo_ejercicio`
+  ADD PRIMARY KEY (`codigo_ti`),
+  ADD KEY `codigo_ej` (`codigo_ej`);
+
+--
+-- Indices de la tabla `tipo_usuario`
+--
+ALTER TABLE `tipo_usuario`
+  ADD PRIMARY KEY (`codigo_ti`);
+
+--
+-- Indices de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`correo`),
+  ADD KEY `codigo_ti` (`codigo_ti`);
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `relacion_usu_ejer`
+--
+ALTER TABLE `relacion_usu_ejer`
+  ADD CONSTRAINT `relacion_usu_ejer_ibfk_1` FOREIGN KEY (`correo`) REFERENCES `usuario` (`correo`),
+  ADD CONSTRAINT `relacion_usu_ejer_ibfk_2` FOREIGN KEY (`codigo_ej`) REFERENCES `ejercicio` (`codigo_ej`);
+
+--
+-- Filtros para la tabla `tema`
+--
+ALTER TABLE `tema`
+  ADD CONSTRAINT `tema_ibfk_1` FOREIGN KEY (`Codigo_de_usuario`) REFERENCES `usuario` (`correo`);
+
+--
+-- Filtros para la tabla `tipo_ejercicio`
+--
+ALTER TABLE `tipo_ejercicio`
+  ADD CONSTRAINT `tipo_ejercicio_ibfk_1` FOREIGN KEY (`codigo_ej`) REFERENCES `ejercicio` (`codigo_ej`);
+
+--
+-- Filtros para la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`codigo_ti`) REFERENCES `tipo_usuario` (`codigo_ti`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
