@@ -19,7 +19,7 @@ const Menu = (props) => {
             Eliminar perfil
           </a>
         </nav>
-        <Link className="btn btn-outline-primary" to="/">
+        <Link className="btn btn-outline-primary" to="/Iniciouno">
           Cerrar sesión
         </Link>
       </div>
