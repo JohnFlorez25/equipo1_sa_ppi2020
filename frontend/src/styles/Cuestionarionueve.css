@@ -1,0 +1,46 @@
+.cuestionario {
+  background-image: url("./img/hojas.jpg");
+  background-position: center center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 110px 50px;
+}
+
+.Pregunta1 {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.N2 {
+  margin: 0;
+  font-size: 50px;
+  text-align: center;
+}
+
+.btn1 {
+  height: 70px;
+  width: 100%;
+  margin: auto;
+}
+
+.btn2 {
+  height: 100px;
+  width: 100%;
+  margin: auto;
+}
+
+.btn3 {
+  height: 100px;
+  width: 100%;
+  margin: auto;
+}
+
+.btn4 {
+  height: 100px;
+  width: 100%;
+  margin: auto;
+}

@@ -17,7 +17,7 @@ const Cuestionarioocho = (props) => {
       <button
         type="button"
         className="btn2 btn-danger btn-lg btn-block"
-        onClick={() => alert(`¡CORRECTO!`) || history.push("/Cuestionariotres")}
+        onClick={() => alert(`¡CORRECTO!`) || history.push("/Cuestionarionueve")}
       >
         Se deben quitar de los envases de vidrio y tirarlos al contenedor amarillo.
       </button>
