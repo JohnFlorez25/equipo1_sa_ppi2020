@@ -20,7 +20,7 @@ const Cuestionariouno = (props) => {
         class="btn2 btn-danger btn-lg btn-block"
         onClick={() => alert(`¡CORRECTO!`) || history.push("/Cuestionariocuatro")}
       >
-        Las dos respuestas anteiores son correctas
+        Las dos respuestas anteriores son correctas
       </button>
     </div>
   );

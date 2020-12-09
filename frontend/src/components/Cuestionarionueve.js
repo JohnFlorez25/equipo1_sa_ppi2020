@@ -6,9 +6,9 @@ const Cuestionarionueve = (props) => {
   const { history } = props;
   return (
     <div className="cuestionario">
-      <h9 className="Pregunta1">
+      <h5 className="Pregunta1">
       Si haces una recopilación de música y ya no te gusta tu artista favorito de los 15 años… ¿dónde debes tirar el CD?
-      </h9><br></br><br></br><br></br>
+      </h5><br></br><br></br><br></br>
       <button type="button" class="btn1 btn-success btn-lg btn-block" onClick={() => alert(`¡INCORRECTO! VUELVE A INTENTARLO`)}>
         Al contenedor amarillo, porque es de plastico
       </button>
