@@ -6,11 +6,11 @@
   background-size: cover;
   height: 100%;
   width: 100%;
-  padding: 110px 70px;
+  padding: 110px 50px;
 }
 
 .Pregunta1 {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   padding: 10px;
 }
@@ -22,7 +22,7 @@
 }
 
 .btn1 {
-  height: 70px;
+  height: 100px;
   width: 100%;
   margin: auto;
 }

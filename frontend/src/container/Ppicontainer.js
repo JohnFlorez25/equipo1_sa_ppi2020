@@ -22,6 +22,7 @@ import Cuestionariodos from "../components/Cuestionariodos";
 import Cuestionariotres from "../components/Cuestionariotres";
 import Cuestionariocuatro from "../components/Cuestionariocuatro";
 import Cuestionariocinco from "../components/Cuestionariocinco";
+import Cuestionarioseis from "../components/Cuestionarioseis";
 
 export default function Ppicontainer() {
   return (
@@ -47,6 +48,7 @@ export default function Ppicontainer() {
       <Route path="/Cuestionariotres" exact component={Cuestionariotres} />
       <Route path="/Cuestionariocuatro" exact component={Cuestionariocuatro} />
       <Route path="/Cuestionariocinco" exact component={Cuestionariocinco} />
+      <Route path="/Cuestionarioseis" exact component={Cuestionarioseis} />
       
     </BrowserRouter>
   );
