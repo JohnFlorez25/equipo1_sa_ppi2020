@@ -1,3 +1,10 @@
 .nuevo{
   background-color: #99ffcc;
+  padding: 80px;
+
 }
+
+.siguiente {
+  transform:  translate(75%, -90%);
+}
+

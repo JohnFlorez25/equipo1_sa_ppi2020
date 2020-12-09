@@ -5,12 +5,12 @@ const Temasiete = (props) => {
   const { history } = props;
   return (
     <div className="amarillo">
-      <p className="text"><br></br><br></br>
+      <p className="text"><br></br>
         <h4 align="center">
           Son muchas las personas que a la hora de tirar un residuo se enfrentan
           a la pregunta "¿Esto va al azul o al amarillo?"
         </h4>
-        <br></br>
+        <br></br><br></br>
         <p class="text-warning">
           <h5> Errores en el contenedor amarillo </h5>
         </p><br></br><br></br>

@@ -1,12 +1,12 @@
 .cuestionario {
-  background-image: url("./img/hojas.jpg");
+  background-image: url("./img/azul.jpg");
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
-  padding: 120px 80px;
+  padding: 120px 50px;
 }
 
 .Pregunta1 {
@@ -34,7 +34,7 @@
 }
 
 .btn3 {
-  height: 70px;
+  height: 100px;
   width: 100%;
   margin: auto;
 }

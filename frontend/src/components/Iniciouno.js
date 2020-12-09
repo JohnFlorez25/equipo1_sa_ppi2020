@@ -2,15 +2,17 @@ import React from "react";
 import {Link, withRouter} from "react-router-dom";
 import "../styles/Iniciouno.css";
 
+        
 const Iniciouno = () => {
+
   return (
     <div className="uno">
       <main role="main">
         <section className="text-center">
-          <div className="container"><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <div className="container"><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             
-            <h4 align="center">¡Bienvenidos!</h4>
-            <p><br></br>
+            
+            <p><br></br><br></br><br></br><br></br><br></br><br></br>
               <Link to="/Registro" className="btn btn-primary my-5">
                 Registrate
               </Link>

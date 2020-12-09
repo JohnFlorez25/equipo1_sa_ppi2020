@@ -44,7 +44,7 @@ const Tematres = (props) => {
 </ul>
 </div>
 
-<div><br></br> tea
+<div><br></br> 
           <button type="button" className="btn btn-danger"
           onClick={() => history.goBack("/")}
           >

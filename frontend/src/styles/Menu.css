@@ -1,17 +1,15 @@
-.card{
+.card {
   font-family: sans-serif;
   text-align: center;
   background-image: url("/img/uno.jpg");
   max-width: 30rem;
   max-height: 20rem;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
 }
 
-.completo{
+.completo {
   font-family: sans-serif;
   text-align: center;
   background-image: url("/img/fondo8.jpg");
-
-
 }

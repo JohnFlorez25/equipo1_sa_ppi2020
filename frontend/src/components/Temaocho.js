@@ -4,11 +4,11 @@ import "../styles/Temaocho.css";
 const Temaocho = (props) => {
   const { history } = props;
   return (
-    <div>
+    <div className="azul">
       <p className="text-break">
         <br></br>
-
-        <p class="text-primary"><br></br>
+        <p class="text-primary">
+          <br></br>
           <h5> Errores en el contenedor azul </h5>
         </p>
         <br></br>
@@ -57,7 +57,11 @@ const Temaocho = (props) => {
           </button>
         </div>
         <br></br>
-        <br></br>
+        <br></br><br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
       </p>
     </div>
   );

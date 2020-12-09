@@ -6,8 +6,8 @@ const Temanueve = (props) => {
   return (
     <div className="verde">
       <p className="text">
-        <br></br>
-        <p class="text-success"><br></br>
+        
+        <p class="text-success">
           <h5> Errores en el contenedor verde </h5>
         </p><br></br>
         <img className="casca" src="./img/contenedor3.jpg" align="left" />
